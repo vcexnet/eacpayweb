@@ -1,0 +1,65 @@
+如何自建earthcoin区块链浏览器，建议直接用新用户购买腾讯云，198元/3年,配置：2核4G/8M/80GB SSD盘/1200GB月流量，自己独享流量和带宽完全足够。
+一、设置swap文件
+
+3.1、sudo fallocate -l 2G /swapfile
+3.2、sudo chmod 600 /swapfile
+3.3、sudo mkswap /swapfile
+3.4、sudo swapon /swapfile
+3.5、vi /etc/fstab
+               /swapfile swap swap defaults 0 0
+3.6、sudo swapon --show
+3.7、sudo free -h
+
+二、编译方法
+
+使用root用户进行安装
+############################################################
+apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3 libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-test-dev libboost-thread-dev
+
+apt-get install libdb5.3-dev libdb5.3++-dev
+
+apt-get install libminiupnpc-dev
+
+git clone https://github.com/Sandokaaan/Earthcoin.git
+
+cd Earthcoin
+
+./autogen.sh
+./configure --without-gui --disable-tests --disable-man --with-incompatible-bdb
+make
+
+cd src
+strip earthcoind
+strip earthcoin-cli
+strip earthcoin-tx
+
+./earthcoind --daemon
+同样在/src目录下面执行./earthcoin-cli -getinfo就可以查看区块链同步情况
+############################################################
+
+三、设置earthcoin.conf文件
+
+1、在根目录下，输入ls -a
+2、输入cd .earthcoin
+3、输入vi earthcoin.conf
+4、rpcuser=username
+rpcpassword=userpassword
+rpcallowip=127.0.0.1
+rpcport=15678
+port=35677
+daemon=1
+server=1
+txindex=1
+listen=1
+maxconnections=100
+保存退出即可，先kill earthcoind，然后重新执行./earthcoind --daemon
+
+四、区块链浏览器
+1、在根目录下输入apt install openjdk-8-jre-headless 进行java的安装
+1、在根目录下输入cd /home
+2、git clone https://github.com/Sandokaaan/EAC_API_JAVA.git api
+3、输入cd api/dist
+4、输入：java -jar ApiExtension.jar
+5、按ctrl+c中断执行,输入ls查看，会有一个api.conf文件
+6、输入vi api.conf，编辑该文件，确保和earthcoin.conf里面的rpcuser、rpcpassword、rpcport、apiurl、apiport一样即可
+7、再次执行第四步操作即可
