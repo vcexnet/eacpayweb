@@ -1,0 +1,594 @@
+<!DOCTYPE html >
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Help Center</title>
+    <script  src="js/jquery-3.5.1.min.js"></script>
+    <style type="text/css">
+        .tips_head {
+            padding-left:20px;
+            cursor: pointer ;
+            text-align:left;
+            margin-top:20px;
+            color:black;
+        }
+        .tips_content {
+            padding:0 ;
+            border-top: 1px solid #0050D0;
+            display:block;
+            display:none;
+            text-indent: 2em;
+            text-align:left;
+        }
+
+        .tips1_head1 {
+            padding-left:20px;
+            cursor: pointer ;
+            text-align:left;
+            margin-top:20px;
+            color:black;
+        }
+        .tips1_content1 {
+            padding:0 ;
+            border-top: 1px solid #0050D0;
+            display:block;
+            display:none;
+            text-indent: 2em;
+            text-align:left;
+        }
+        .tips2_head2 {
+            padding-left:20px;
+            cursor: pointer ;
+            text-align:left;
+            margin-top:20px;
+            color:black;
+        }
+        .tips2_content2 {
+            padding:0 ;
+            border-top: 1px solid #0050D0;
+            display:block;
+            display:none;
+            text-indent: 2em;
+            text-align:left;
+        }
+
+        .tips3_head3 {
+            padding-left:20px;
+            cursor: pointer ;
+            text-align:left;
+            margin-top:20px;
+            color:black;
+        }
+        .tips3_content3 {
+            padding:0 ;
+            border-top: 1px solid #0050D0;
+            display:block;
+            display:none;
+            text-indent: 2em;
+            text-align:left;
+        }
+
+        .tips4_head4 {
+            padding-left:20px;
+            cursor: pointer ;
+            text-align:left;
+            margin-top:20px;
+            color:black;
+        }
+        .tips4_content4 {
+            padding:0 ;
+            border-top: 1px solid #0050D0;
+            display:block;
+            display:none;
+            text-indent: 2em;
+            text-align:left;
+        }
+
+        .tips5_head5 {
+            padding-left:20px;
+            cursor: pointer ;
+            text-align:left;
+            margin-top:20px;
+            color:black;
+        }
+        .tips5_content5 {
+            padding:0 ;
+            border-top: 1px solid #0050D0;
+            display:block;
+            display:none;
+            text-indent: 2em;
+            text-align:left;
+        }
+
+        .tips6_head6 {
+            padding-left:20px;
+            cursor: pointer ;
+            text-align:left;
+            margin-top:20px;
+            color:black;
+        }
+        .tips6_content6 {
+            padding:0 ;
+            border-top: 1px solid #0050D0;
+            display:block;
+            display:none;
+            text-indent: 2em;
+            text-align:left;
+        }
+
+        .tips7_head7 {
+            padding-left:20px;
+            cursor: pointer ;
+            text-align:left;
+            margin-top:20px;
+            color:black;
+        }
+        .tips7_content7 {
+            padding:0 ;
+            border-top: 1px solid #0050D0;
+            display:block;
+            display:none;
+            text-indent: 2em;
+            text-align:white;
+        }
+
+        .tips8_head8 {
+            padding-left:20px;
+            cursor: pointer ;
+            text-align:left;
+            margin-top:20px;
+            color:black;
+        }
+        .tips8_content8 {
+            padding:0 ;
+            border-top: 1px solid #0050D0;
+            display:block;
+            display:none;
+            text-indent: 2em;
+            text-align:left;
+        }
+
+        .tips9_head9 {
+            padding-left:20px;
+            cursor: pointer ;
+            text-align:left;
+            margin-top:20px;
+            color:black;
+        }
+        .tips9_content9 {
+            padding:0 ;
+            border-top: 1px solid #0050D0;
+            display:block;
+            display:none;
+            text-indent: 2em;
+            text-align:left;
+        }
+
+        .tips10_head10 {
+            padding-left:20px;
+            cursor: pointer ;
+            text-align:left;
+            margin-top:20px;
+            color:black;
+        }
+        .tips10_content10 {
+            padding:0 ;
+            border-top: 1px solid #0050D0;
+            display:block;
+            display:none;
+            text-indent: 2em;
+            text-align:left;
+        }
+
+        .tips11_head11 {
+            padding-left:20px;
+            cursor: pointer ;
+            text-align:left;
+            margin-top:20px;
+            color:black;
+        }
+        .tips11_content11 {
+            padding:0 ;
+            border-top: 1px solid #0050D0;
+            display:block;
+            display:none;
+            text-indent: 2em;
+            text-align:left;
+        }
+
+        .tips12_head12 {
+            padding-left:20px;
+            cursor: pointer ;
+            text-align:left;
+            margin-top:20px;
+            color:black;
+        }
+        .tips12_content12 {
+            padding:0 ;
+            border-top: 1px solid #0050D0;
+            display:block;
+            display:none;
+            text-indent: 2em;
+            text-align:left;
+        }
+
+        .tips13_head13 {
+            padding-left:20px;
+            cursor: pointer ;
+            text-align:left;
+            margin-top:20px;
+            color:black;
+        }
+        .tips13_content13 {
+            padding:0 ;
+            border-top: 1px solid #0050D0;
+            display:block;
+            display:none;
+            text-indent: 2em;
+            text-align:left;
+        }
+
+        .tips14_head14 {
+            padding-left:20px;
+            cursor: pointer ;
+            text-align:left;
+            margin-top:20px;
+            color:black;
+        }
+        .tips14_content14 {
+            padding:0 ;
+            border-top: 1px solid #0050D0;
+            display:block;
+            display:none;
+            text-indent: 2em;
+            text-align:left;
+        }
+        .center-block{
+            position: relative;
+            width: 100%;
+            /*height: 500px;*/
+            /*background: #8fcbff;*/
+          border: black 1px solid;
+            line-height: 50px;
+
+        }
+        h2{
+            font-family: 微软雅黑;
+            font-size: 39.44px;
+        }
+        span{
+            font-family: 微软雅黑;
+            color: black;
+            font-size: 34.51px;
+        }
+        li{font-family: 微软雅黑;
+            color: black;
+            font-size: 34.51px;
+        }
+
+
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $("#tips h2.tips_head").bind("click", function() {
+                var $tips_content = $(this).next("div.tips_content");
+                if ($tips_content.is(":visible")) {
+                    $tips_content.hide();
+                } else {
+                    $tips_content.show();
+                }
+            })
+        })
+        $(function() {
+            $("#tips1 h2.tips1_head1").bind("click", function() {
+                var $tips1_content1 = $(this).next("div.tips1_content1");
+                if ($tips1_content1.is(":visible")) {
+                    $tips1_content1.hide();
+                } else {
+                    $tips1_content1.show();
+                }
+            })
+        })
+        $(function() {
+            $("#tips2 h2.tips2_head2").bind("click", function() {
+                var $tips2_content2 = $(this).next("div.tips2_content2");
+                if ($tips2_content2.is(":visible")) {
+                    $tips2_content2.hide();
+                } else {
+                    $tips2_content2.show();
+                }
+            })
+        })
+        $(function() {
+            $("#tips3 h2.tips3_head3").bind("click", function() {
+                var $tips3_content3 = $(this).next("div.tips3_content3");
+                if ($tips3_content3.is(":visible")) {
+                    $tips3_content3.hide();
+                } else {
+                    $tips3_content3.show();
+                }
+            })
+        })
+        $(function() {
+            $("#tips4 h2.tips4_head4").bind("click", function() {
+                var $tips4_content4 = $(this).next("div.tips4_content4");
+                if ($tips4_content4.is(":visible")) {
+                    $tips4_content4.hide();
+                } else {
+                    $tips4_content4.show();
+                }
+            })
+        })
+        $(function() {
+            $("#tips5 h2.tips5_head5").bind("click", function() {
+                var $tips5_content5 = $(this).next("div.tips5_content5");
+                if ($tips5_content5.is(":visible")) {
+                    $tips5_content5.hide();
+                } else {
+                    $tips5_content5.show();
+                }
+            })
+        })
+        $(function() {
+            $("#tips6 h2.tips6_head6").bind("click", function() {
+                var $tips6_content6 = $(this).next("div.tips6_content6");
+                if ($tips6_content6.is(":visible")) {
+                    $tips6_content6.hide();
+                } else {
+                    $tips6_content6.show();
+                }
+            })
+        })
+        $(function() {
+            $("#tips7 h2.tips7_head7").bind("click", function() {
+                var $tips7_content7 = $(this).next("div.tips7_content7");
+                if ($tips7_content7.is(":visible")) {
+                    $tips7_content7.hide();
+                } else {
+                    $tips7_content7.show();
+                }
+            })
+        })
+        $(function() {
+            $("#tips8 h2.tips8_head8").bind("click", function() {
+                var $tips8_content8 = $(this).next("div.tips8_content8");
+                if ($tips8_content8.is(":visible")) {
+                    $tips8_content8.hide();
+                } else {
+                    $tips8_content8.show();
+                }
+            })
+        })
+        $(function() {
+            $("#tips9 h2.tips9_head9").bind("click", function() {
+                var $tips9_content9 = $(this).next("div.tips9_content9");
+                if ($tips9_content9.is(":visible")) {
+                    $tips9_content9.hide();
+                } else {
+                    $tips9_content9.show();
+                }
+            })
+        })
+        $(function() {
+            $("#tips10 h2.tips10_head10").bind("click", function() {
+                var $tips10_content10 = $(this).next("div.tips10_content10");
+                if ($tips10_content10.is(":visible")) {
+                    $tips10_content10.hide();
+                } else {
+                    $tips10_content10.show();
+                }
+            })
+        })
+        $(function() {
+            $("#tips11 h2.tips11_head11").bind("click", function() {
+                var $tips11_content11 = $(this).next("div.tips11_content11");
+                if ($tips11_content11.is(":visible")) {
+                    $tips11_content11.hide();
+                } else {
+                    $tips11_content11.show();
+                }
+            })
+        })
+        $(function() {
+            $("#tips12 h2.tips12_head12").bind("click", function() {
+                var $tips12_content12 = $(this).next("div.tips12_content12");
+                if ($tips12_content12.is(":visible")) {
+                    $tips12_content12.hide();
+                } else {
+                    $tips12_content12.show();
+                }
+            })
+        })
+        $(function() {
+            $("#tips13 h2.tips13_head13").bind("click", function() {
+                var $tips13_content13 = $(this).next("div.tips13_content13");
+                if ($tips13_content13.is(":visible")) {
+                    $tips13_content13.hide();
+                } else {
+                    $tips13_content13.show();
+                }
+            })
+        })
+        $(function() {
+            $("#tips14 h2.tips14_head14").bind("click", function() {
+                var $tips14_content14 = $(this).next("div.tips14_content14");
+                if ($tips14_content14.is(":visible")) {
+                    $tips14_content14.hide();
+                } else {
+                    $tips14_content14.show();
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+<div id="tips" class="center-block" >
+    <h2 class="tips_head">1、What is EACTALK?</h2>
+    <div class="tips_content">
+    <span>EACTALK is a meta-universe information publishing social web 3.0 application based on EAC blockchain. In order to better express ideas freely, avoid the control of existing centralized social platforms and truly realize the free expression of speech, EACTALK features.</span>
+        <ol>
+            <li>accounts are unregistered, globally unique and cannot be falsified, and ownership of the information is entirely in your hands.</li>
+            <li>Information is public, remains permanently on the chain, cannot be tampered with, and no one can delete it.</li>
+            <li>Publishers are anonymous and secure, never human, with the option to self-certify at any time as needed;)</li>
+            <li>accounts that no one can block and no one can ban.</li>
+            <li>itself does not discern the authenticity of the information, the authenticity of the information is self-certified by the publisher.</li>
+            <li>The speed of information transmission worldwide, what is thought and what is reached.</li>
+        </ol>
+        <span>EACTALK TEAM</span>
+    </div>
+
+</div>
+
+<div id="tips1" class="center-block">
+    <h2 class="tips1_head1">2、What is EAC and how to get EAC?</h2>
+    <div class="tips1_content1">
+        <span>EarthCoin (EAC) was born on December 20, 2013. EAC is a new generation of Scrypt coins that use the scrypt cryptographic algorithm first proposed by Colin Percival as proof of work.</span>
+        <span>There are several ways to get EAC in the current period.</span>
+        <ol>
+            <li>Buy on the exchange, WWW.AEX88.COM (formerly BitTime)</li>
+            <li>Use professional mining machine to mine EAC</li>
+        </ol>
+    </div>
+</div>
+
+<div id="tips2" class="center-block">
+        <h2 class="tips2_head2">3、Trading EAC tutorial</h2>
+    <div class="tips2_content2">
+        <video width="640" height="480" controls src="https://vcexnet.github.io/eacpayweb/sc/buy-en.mp4">
+        </video></div>
+</div>
+
+<div id="tips3" class="center-block">
+    <h2 class="tips3_head3">4、Exchange withdraw coins to EACTALK tutorial</h2>
+    <div class="tips3_content3">
+        <video width="640" height="480" controls src="https://vcexnet.github.io/eacpayweb/sc/withdraw-en.mp4">
+        </video>
+    </div>
+</div>
+
+<div id="tips4" class="center-block">
+    <h2 class="tips4_head4">5、Why should I receive EAC for announcement information?</h2>
+    <div class="tips4_content4">
+        <span>In order to save resources, avoid spam from occupying popular positions and reduce block size, so a certain EAC is charged to achieve usefulness and truthfulness of information and increase the cost of spam and false information. The collected EAC will be used to maintain and invest in more EAC ecological application development.</span>
+</div>
+</div>
+
+<div id="tips5" class="center-block">
+    <h2 class="tips5_head5">6、How much EAC is needed to publish announcement type messages?</h2>
+    <div class="tips5_content5">
+        <span>There are currently four types of EAC announcement type messages.</span>
+        <ol>
+            <li>Trumpet, ≥ 50,000 EAC/article, mainly for the broadcast of ideas, thoughts, affirmations, concepts for the whole world to know.</li>
+            <li>Deepthroat, ≥ 100,000 EAC/article, mainly for secret exposure, exposing some industry scandals and unknown secrets and promoting positive energy.</li>
+            <li>Emotion, ≥1000 EAC/article, providing work, life, family, love, workplace and other kinds of spiteful, emotional expression of their true identity that is not easy for others to know.</li>
+            <li>Treeholes, ≥100EAC/strip, where anyone who wants to talk, but can't pick an audience for specific reasons, can come here, where no one knows your true identity, and where it hurts to talk.</li>
+        </ol>
+        <span>Notes.</span>
+        <ol>
+            <li>Must not be lower than the standard amount, otherwise it will not be displayed</li>
+            <li>Exceed the criteria in accordance with the amount of the largest to small display, only the first 50 bars</li>
+            <li>Below the standard amount will not be displayed and will not be refunded</li>
+
+        </ol>
+    </div>
+</div>
+
+<div id="tips6" class="center-block">
+    <h2 class="tips6_head6">7、How to publish announcement information</h2>
+    <div class="tips6_content6">
+        <ol>
+            <li>Click on the bottom: Publish.</li>
+            <li>Select: Announcement.</li>
+            <li>In the send screen that pops up, select the type of announcement to be sent, enter the message and attachments to be sent, and ensure that there is a sufficient number of EACs in the wallet.</li>
+            <li>Click send and enter pin.</li>
+        </ol>
+        <span>The number of EACs required regarding the type of announcement is as follows.</span>
+        <ol>
+            <li>Trumpet: >50,000 EAC.</li>
+            <li>Deepthroat: >100,000 EAC.</li>
+            <li>Emotion: >1000 EAC.</li>
+            <li>Tree holes: >100 EAC.</li>
+        </ol>
+        <span>The larger the number the higher the display in the same type of announcement, according to the EAC confirmation speed, wait about 1 minute, refresh the page can be seen in the selection of the home page corresponding message type inside.</span>
+    </div>
+</div>
+
+<div id="tips7" class="center-block">
+    <h2 class="tips7_head7">8、How to post general messages</h2>
+    <div class="tips7_content7">
+        <ol>
+            <li>Click on the bottom: Publish.</li>
+            <li>Choice: General message.</li>
+            <li>In the sending pop-up screen, enter the recipient's address, alias, eac number, message, and attachment, respectively.</li>
+            <li>Click send and enter pin.</li>
+        </ol>
+        <span>Depending on the speed of the EAC confirmation, wait for about 1 minute and refresh the page to see it in "My Messages".</span>
+    </div>
+</div>
+
+<div id="tips8" class="center-block">
+    <h2 class="tips8_head8">9、How to export private key</h2>
+    <div class="tips8_content8">
+        <span>To export your private key, please use the export function. The private key is the proof of ownership of your account, please make sure to keep it and go without leaking it. Otherwise you will lose your information ownership and the EAC inside your wallet</span>
+        <ol>
+            <li>EAC accesses "My"-->"Security Center"-->"Paper Key"</li>
+            <li>IPFS access to "My"-->"IPFS Nodes"</li>
+        </ol>
+    </div>
+</div>
+
+<div id="tips9" class="center-block">
+    <h2 class="tips9_head9">10、How do I build my own EAC node?</h2>
+    <div class="tips9_content9">
+        <span>First download earthcoin computer side full node wallet, windows or linux are available, download and run wait for the block synchronization to complete, open the computer port, mapping external network address can be</span></br>
+        <span>Wallet Download：https://github.com/Sandokaaan/EarthCoin/</span></br>
+        <span>Build Tutorial：https://vcexnet.github.io/eacpayweb/sc/node-en.html</span>
+    </div>
+</div>
+
+<div id="tips10" class="center-block">
+<h2 class="tips10_head10">11、How to build your own IPFS node</h2>
+<div class="tips10_content10">
+        <span>See the ipfs.io website</span>
+</div>
+</div>
+
+<div id="tips11" class="center-block">
+<h2 class="tips11_head11">12、How can I make the information I publish visible to everyone?</h2>
+<div class="tips11_content11">
+    <span>Using EACTALK, to achieve the information posted so that all EACTALK installations can see it, please post an announcement message. Choose one of the four types according to your actual situation. The more EAC you pay when posting, the higher you will be ranked in the same type of announcement. Anyone who opens EACTALK will be able to see it. Secondly, there is enough EAC in your wallet for posting your message.</span>
+</div>
+</div>
+
+<div id="tips12" class="center-block">
+<h2 class="tips12_head12">13、Can I delete and modify the information I posted?</h2>
+<div class="tips12_content12">
+Unfortunately not!</br>
+<span>Because all the information of EACTALK is permanently stored on the Earthcoin blockchain, the information on the blockchain cannot be modified, deleted or tampered with.</span>
+<span>Therefore, you must be careful before posting information and not to do whatever you want.</span>
+</div>
+</div>
+
+<div id="tips13" class="center-block">
+<h2 class="tips13_head13">14、mining EAC tutorial</h2>
+<div class="tips13_content13">
+<span>EAC currently supports AUX-POW mining mode, that is, it supports joint mining, you can dig EAC while digging LTC or DOGE, it needs mining pool support, if not, please consult your mining pool service provider, as long as you can dig LTC, DOGE mining machines are able to dig EAC.</span></br>
+<video height="640" width="480" controls src="https://vcexnet.github.io/eacpayweb/sc/mining-en.mp4">
+</video>
+</div>
+</div>
+
+</div>
+
+<div id="tips14" class="center-block">
+    <h2 class="tips14_head14">15、What is the private key?</h2>
+    <div class="tips14_content14">
+    <span>The private key is the proof of your account and is very important, unique, non-resettable and non-recoverable. If you find that your private key is in danger of being exposed, please transfer the EAC in your wallet to another secure EAC address. there are two separate types of private keys in EACTALK.</span>
+        <ol>
+            <li>The EAC helper word, which is the result of making the Earthcoin blockchain private key readable, must be remembered.</li>
+            <li>IPFS private and public keys, please make a backup (inside the IPFS node settings), copy or write them on paper media for safekeeping, which is the proof of your assets stored on the IPFS network.</li>
+        </ol>
+    </div>
+</div>
+</body>
+</html>
